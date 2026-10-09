@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "NeoX",
+  "version": "1.0",
+  "description": "NeoX — A Heuristic-Based Chrome Extension for Detecting Hidden Prompt Injection",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
